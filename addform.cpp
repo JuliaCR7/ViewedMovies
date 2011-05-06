@@ -2,7 +2,7 @@
 #include "ui_addform.h"
 
 AddForm::AddForm(QWidget *parent) :
-    QWidget(parent),
+    QDialog(parent),
     ui(new Ui::AddForm)
 {
     ui->setupUi(this);

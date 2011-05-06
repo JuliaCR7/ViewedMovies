@@ -1,13 +1,13 @@
 #ifndef ADDFORM_H
 #define ADDFORM_H
 
-#include <QWidget>
+#include <QDialog>
 
 namespace Ui {
     class AddForm;
 }
 
-class AddForm : public QWidget
+class AddForm : public QDialog
 {
     Q_OBJECT
 

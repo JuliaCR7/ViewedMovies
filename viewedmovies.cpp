@@ -21,5 +21,6 @@ ViewedMovies::~ViewedMovies()
 
 void ViewedMovies::on_pushButton_3_clicked()
 {
-
+    AddForm form(this);
+    form.exec();
 }

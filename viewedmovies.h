@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QtSql>
+#include "addform.h"
 
 namespace Ui {
     class ViewedMovies;
