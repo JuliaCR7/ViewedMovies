@@ -3,19 +3,27 @@
 #include <QDebug>
 #include <QMessageBox>
 #include "viewedmovies.h"
-const char * const nameDB = "movies.sqlite";
+#include "startwidget.h"
+const char * const nameDB = "movies.db";
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    QTextCodec* textCodec = QTextCodec::codecForName("UTF8");
+    QTextCodec::setCodecForLocale(textCodec);
+    QTextCodec::setCodecForTr(textCodec);
+    QTextCodec::setCodecForCStrings(textCodec);
+    StartWidget sw;
+    if (sw.exec() != QDialog::Accepted)
+        return 0;
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setHostName("localhost");
     db.setDatabaseName(nameDB);
     if (!db.open()){
-        QMessageBox::critical(NULL, "Ошибка!", "Не могу открыть файл с базой фильмов.", QMessageBox::Ok);
+        QMessageBox::critical(NULL, "Error!", "Can't connect to database", QMessageBox::Ok);
         return 1;
     }
     ViewedMovies w;
     w.show();
-
     return a.exec();
 }

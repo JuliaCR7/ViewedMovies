@@ -12,10 +12,25 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         viewedmovies.cpp \
-    addform.cpp
+    addform.cpp \
+    film.cpp \
+    filmmodel.cpp \
+    infoform.cpp \
+    startwidget.cpp
 
 HEADERS  += viewedmovies.h \
-    addform.h
+    addform.h \
+    film.h \
+    filmmodel.h \
+    infoform.h \
+    startwidget.h
 
 FORMS    += viewedmovies.ui \
-    addform.ui
+    addform.ui \
+    infoform.ui \
+    startwidget.ui
+
+RESOURCES += \
+    resources.qrc
+
+RC_FILE = server.rc

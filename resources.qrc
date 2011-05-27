@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/add.png</file>
+        <file>img/delete.png</file>
+        <file>img/edit.png</file>
+        <file>img/Fon.png</file>
+        <file>img/bg.png</file>
+        <file>img/pic.png</file>
+        <file>img/FBF7C8E8E5A2F6F3A2F5F2A4F2E5AF_155.png</file>
+    </qresource>
+</RCC>
