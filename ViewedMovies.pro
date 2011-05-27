@@ -15,20 +15,17 @@ SOURCES += main.cpp\
     addform.cpp \
     film.cpp \
     filmmodel.cpp \
-    infoform.cpp \
-    startwidget.cpp
+    infoform.cpp
 
 HEADERS  += viewedmovies.h \
     addform.h \
     film.h \
     filmmodel.h \
-    infoform.h \
-    startwidget.h
+    infoform.h
 
 FORMS    += viewedmovies.ui \
     addform.ui \
-    infoform.ui \
-    startwidget.ui
+    infoform.ui
 
 RESOURCES += \
     resources.qrc
