@@ -2,7 +2,6 @@
 #define FILM_H
 
 #include <QObject>
-#include <QImage>
 
 enum Type
 {
